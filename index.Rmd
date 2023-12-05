@@ -95,7 +95,7 @@ table_dat <- table_dat0 %>%
   select(images, text)
 
 extra <- table_dat0 %>%
-  mutate(name = str_replace_all(str_replace_all(blog_link_names, "blog1-|blog2-"
+  mutate(name = str_replace_all(str_replace_all(blog_link_names, "blog-|Blog-"
                                                 , "")
                                 , "-|_", " "))
 
